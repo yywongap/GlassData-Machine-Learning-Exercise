@@ -8,7 +8,7 @@ config.gpu_options.allow_growth = True
 sess = tf.Session(config=config)
 
 log_dir = 'summary/graph2/'
-if os.path.exists(log_dir):   # 删掉以前的summary，以免重合
+if os.path.exists(log_dir):  
     shutil.rmtree(log_dir)
 os.makedirs(log_dir)
 print('created log_dir path')
